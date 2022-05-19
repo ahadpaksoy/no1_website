@@ -1,0 +1,123 @@
+body{        
+  margin:0;
+  padding:0;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover ;
+  background-position: center,top;
+}
+.nav-item {
+font-family: 'Poppins', sans-serif;
+font-weight:900;
+font-style:italic;
+font-size:18pt;
+padding: 0.2rem 1rem 0.2rem 1rem;
+margin-left: 5rem;
+border: 1px solid;
+border-radius: 10px;
+border-color: rgba(255,255,255,0);
+background: linear-gradient(rgba(52, 73, 94, 0.476) 0 0) left / var(--p,0) no-repeat;
+transition: .4s,background-position 0s;
+}
+.nav-item:hover {
+--p: 100%;
+background-position: right;
+}
+.navbar-light .navbar-nav .nav-link {
+color: #34495E;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+color:#79FAC5;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light{
+background-color:rgba(121, 250, 196, 0.467);
+}
+.navbar-light .navbar-toggler{
+border: 0px solid;
+color: #34495E;
+}
+.search {
+  background-color: transparent;
+  border: 2px solid #91422b;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+  color: #91422b;
+}
+#center{
+  margin-bottom:30%;
+  margin-top:10%;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;/*sırayla gider sigmayan asagi iner*/
+  margin-left:2%;
+}
+
+#form{
+  margin-bottom: 5%;
+}
+.movie {
+  border-radius: 10px;
+  box-shadow: 0 4px 5px rgb(255, 255, 255);
+  overflow: hidden;
+  position: relative;
+  margin: 2rem;
+  width: 390px;
+}
+
+.movie img {
+  width: 50%;
+}
+
+.movie-info {
+  color:#91422b;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+}
+
+.movie-info span {
+  background-color: #22254b;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+  color: rgb(209, 207, 89);
+}
+
+.movie-info span.yellow {
+  color: rgb(87, 146, 156);
+}
+
+.movie-info span.red {
+  color: rgb(189, 42, 42);
+}
+
+.overview {
+  background-color: #91422b;
+  color:black;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+}
+
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
